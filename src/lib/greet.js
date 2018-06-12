@@ -1,3 +1,5 @@
-const greet = module.export = (name) => { //eslint-disable-line
-  return name;
+'use strict';
+
+const greet = module.exports = (name) => { // eslint-disable-line
+  return typeof name === 'string' ? `hello ${name}` : null;
 };
